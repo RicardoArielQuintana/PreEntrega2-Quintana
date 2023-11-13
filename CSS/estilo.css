@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-.dark-purple {color: #240c31ff;}
-.vista-blue {color: #7c96f4ff;}
-.tropical-indigo {color: #8e92cdff;}
-.cherry-blossom-pink {color: #ecacbcff;}
-.pale-purple {color: #f2e3efff;}
-
 /*BODY*/
 
 body{
@@ -215,4 +209,18 @@ textarea{
     /* border: 2px solid rgb(90, 59, 59); */
     font-size: 15px;
     border-radius: 0px 0px 20px 20px;
+}
+
+@media (max-width:1023px){
+    header{
+        flex-direction: column;
+        align-items: center; 
+    }
+    .logo{
+        width: 50px;
+    }
+    nav ul li{
+
+        font-size: 1rem;
+    }
 }
