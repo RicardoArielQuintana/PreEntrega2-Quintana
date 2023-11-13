@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dark-purple {color: #240c31ff;}
+.vista-blue {color: #7c96f4ff;}
+.tropical-indigo {color: #8e92cdff;}
+.cherry-blossom-pink {color: #ecacbcff;}
+.pale-purple {color: #f2e3efff;}
+
+/*BODY*/
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313168;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+header h2{
+    color: antiquewhite;
+    
+}
+
+.logo{
+    width: 120px;
+}
+
+.imgContacto{
+    width: 500px;
+    height: 500px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    transition: all 0.25s;
+}
+
+nav ul li:hover{
+    box-sizing: content-box;
+    box-shadow: 0 20px 16px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+h1{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+a{
+    text-decoration: none; /*Elimino subrayado*/
+    text-transform: uppercase; /*Todo en mayúsculas*/
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+main p{
+    padding: 20px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/polygonal19.jpg);
+    background-size: cover;
+}
+footer{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-top: solid gray 1px;
+    background-color: #F2E3EF;
+
+}
+
+
+
+/*IFRAME*/
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+/*FORMULARIOS*/
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(134, 201, 201);
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+
+.btnForm{
+    background-color: #333;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.iconos{
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.filaIconosFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px 0px;
+    align-items: center;
+}
+
+.contenedorIconos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    align-items: center;
+}
+.contenedorIconos p{
+    max-width: 500px;
+}
+
+
+.contenedorDeFilaFlex {
+    /* background-color: bisque; */
+    /* border: 3px black solid; */
+    width: 100%;
+    max-width: 1600x;
+    height: 100%;
+    border-radius: 14px;
+    margin: auto;
+    display: flex;  /*FLEXBOX*/
+    flex-flow: column nowrap;    /*FLOW - direction row (H), wrap (multilinea)*/
+
+    /*separo los elementos hijos sobre el eje principal
+    si flex-direction es row, entonces con JUSTIFY-CONTENT se acomdan los elementos hijos en el eje horizontal*/
+    /* justify-content: start; */
+
+    justify-content: space-between;
+
+    /*align items*/
+    /*si flex direction es row - ordeno los elementos hijos en el eje vertical*/
+
+    align-items: stretch;
+    align-content: flex-start;
+
+}
+
+.filaProductosFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*PRODUCTOS*/
+
+.contenedorProductos{
+    justify-content: space-between;
+    flex-flow: column;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    transition: all 0.25s;
+    margin: 20px 20px;
+
+}
+
+.contenedorProductos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.imgProductos{
+    width: 350px;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contenedorProductos p{ 
+    color: black;
+    /* border: 2px solid rgb(90, 59, 59); */
+    font-size: 15px;
+    border-radius: 0px 0px 20px 20px;
+}
