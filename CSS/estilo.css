@@ -71,7 +71,9 @@ main p{
     align-items: center;
     background-image: url(../img/polygonal19.jpg);
     background-size: cover;
+    text-align: center;
 }
+
 footer{
     text-align: center;
     margin: 20px;
@@ -148,25 +150,14 @@ textarea{
 
 
 .contenedorDeFilaFlex {
-    /* background-color: bisque; */
-    /* border: 3px black solid; */
     width: 100%;
     max-width: 1600x;
     height: 100%;
     border-radius: 14px;
     margin: auto;
-    display: flex;  /*FLEXBOX*/
-    flex-flow: column nowrap;    /*FLOW - direction row (H), wrap (multilinea)*/
-
-    /*separo los elementos hijos sobre el eje principal
-    si flex-direction es row, entonces con JUSTIFY-CONTENT se acomdan los elementos hijos en el eje horizontal*/
-    /* justify-content: start; */
-
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
-
-    /*align items*/
-    /*si flex direction es row - ordeno los elementos hijos en el eje vertical*/
-
     align-items: stretch;
     align-content: flex-start;
 
@@ -213,14 +204,33 @@ textarea{
 
 @media (max-width:1023px){
     header{
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center; 
+        padding: 10px;
     }
     .logo{
-        width: 50px;
+        width: 60px;
+        padding-bottom: 10px;
+    }
+    #mantraTexto{
+        display: none;
     }
     nav ul li{
-
         font-size: 1rem;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .contenedorIconos p{
+        font-size: 1rem;
+    }
+    .contenedorProductos{
+        width: 220px;
+        margin: 10px;
+    
+    }
+    .contenedorProductos .imgProductos{
+        width: 200px;
     }
 }
